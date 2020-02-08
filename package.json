@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/kamal333k/hackbu-node-server#readme",
   "dependencies": {
-    "@hapi/hapi": "^19.1.0"
+    "@hapi/hapi": "^19.1.0",
+    "hapi": "^18.1.0",
+    "nodemon": "^2.0.2"
   }
 }
