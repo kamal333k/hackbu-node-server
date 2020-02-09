@@ -1,6 +1,7 @@
 'use strict';
 
 const Hapi = require('@hapi/hapi');
+const inert = require('inert');
 
 const init = async () => {
 
@@ -14,8 +15,7 @@ const init = async () => {
 	path: '/',
 	handler: (request, h) => {
 
-	    return '<h1>Notification Home Page<br /></h1>' + 
-		'<p>go to "localhost:3000/data/" for more information<br /></p>';
+	    return h.file('./index.html')
 	}
     });
 
@@ -29,7 +29,8 @@ const init = async () => {
 		'If temperature >= 105 degrees, notification will be sent to the app and authorities will be notified<br /></p>';
 	}
     });
-    
+
+    await server.register(inert);
     await server.start();
     console.log('Server running on %s', server.info.uri);
 };
