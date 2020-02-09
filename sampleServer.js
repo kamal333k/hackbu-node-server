@@ -24,9 +24,7 @@ const init = async () => {
 	path: '/data/',
 	handler: (request, h) => {
 
-	    return '<p>If temperature < 70 degrees, no notification will be sent.<br />' + 
-		'If temperature >= 70 degrees, notification will be sent to the app.<br />' +
-		'If temperature >= 105 degrees, notification will be sent to the app and authorities will be notified<br /></p>';
+	    return h.file('./data.html')
 	}
     });
 
