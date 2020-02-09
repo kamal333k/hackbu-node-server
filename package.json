@@ -1,16 +1,34 @@
 {
+<<<<<<< Updated upstream
   "name": "hackbu-node-server",
   "version": "1.0.0",
   "description": "A node server to present an idea at hackbu",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+=======
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "hackbu project",
+  "main": "index.js",
+  "scripts": {
+    "test": "server",
+    "start": "node server.js"
+>>>>>>> Stashed changes
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kamal333k/hackbu-node-server.git"
   },
+<<<<<<< Updated upstream
   "author": "",
+=======
+  "keywords": [
+    "hackbu",
+    "server"
+  ],
+  "author": "kamal",
+>>>>>>> Stashed changes
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kamal333k/hackbu-node-server/issues"
@@ -18,6 +36,7 @@
   "homepage": "https://github.com/kamal333k/hackbu-node-server#readme",
   "dependencies": {
     "@hapi/hapi": "^19.1.0",
+<<<<<<< Updated upstream
     "hapi": "^18.1.0",
     "inert": "^5.1.3",
     "pusher": "^3.0.0",
@@ -26,4 +45,9 @@
   },
   "devDependencies": {},
   "keywords": []
+=======
+    "hapi": "^18.1.0"
+  },
+  "devDependencies": {}
+>>>>>>> Stashed changes
 }
